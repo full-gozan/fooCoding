@@ -1,0 +1,27 @@
+- Admin creates new repository on github
+  - cd (directory)
+  - git init
+  - git remote add origin master repository URL>
+  - echo "lions horses monkeys">>zoo.txt
+  -git add .
+  - git commit -m "create zoo file with some animals in"
+  - git push -u origin master
+
+- user forks the repository created by admin and bring itfrom the repository to the local machine
+  - cd (directory)
+  - git clone (Admin URL)
+  - git checkout -b user-dev
+  - echo " cats dogs birds">> pets.txt
+  - git add .
+  - git commit -m " add new home animals"
+  - git push origin user-dev  // or git push --set-upstream origin user-dev
+- switch the branches on gitHub from master branch to user-dev branch
+-sent the pull request 
+- admin will recieve the pull request on his/her account
+  - then either make it in the gitHub by pressing the merge button 
+  - or by command line
+    - git clone (URL) 
+    - git checkout -b preview ( then see the chances on the new branch
+    - git checkout master
+    - git merge preview 
+    - git push origin master

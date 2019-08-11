@@ -1,0 +1,31 @@
+1) create a directory. Enter a directory. Create an empty file named blank
+   $mkdir newFolder
+   $cd newFolder
+   $touch blank.txt
+
+ 2) write the content "Hello" five times to the file greetings.txt
+    $cat> greetings.txt
+       hello hello hello hello hello
+       Ctrl x+s
+   copy the file greetings.txt and paste its contents into 1.txt, 2.txt, 3.txt, 4.txt and 5.txt
+    $ for i in {1..5}; do echo "hello " >> greetings.txt; done
+    $for i in {1..5}; do touch $i.txt; done
+    $ for i in {1..5}; do cp greetings.txt $i.txt; done
+
+3) create a file and write 3 words inside
+    $cat > pets.txt
+     cat
+     dog
+     hamster
+     Ctrl s+c
+4) create another file with 3 words inside 
+    $cat > commands.txt
+     cat
+     ls
+     pwd 
+    
+5) find the the unique value in both files and store it in a new file 
+    $ touch lovelycommands.txt
+    $cat pets.txt >> lovelycommands.txt
+    $cat commands.txt >> lovelycommands.txt
+    $ sed 's/\([a-z][a-z]*[ ,\n][ ,\n]*\)\1/\1/g' < lovelycommands.txt
