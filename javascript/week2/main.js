@@ -1,11 +1,11 @@
-var x;
+let x;
 console.log("the value of my variable x will be: my best friends");
 console.log(x);
 x=3;
 console.log("the value of my variable x will be: my favourite number");
 console.log(x);
 
-var y;
+let y;
 console.log("the value of my variable x will be: my best object");
 console.log(y);
 y="husam";
@@ -15,16 +15,16 @@ console.log(y);
 
 
 
-var z;
+let z;
 z=7.25;
 console.log(z);
-var a;
+let a;
 a=Math.round(z);
 if (a>z)
 console.log(a);
 else console.log(z);
 
-var plurality;
+let plurality;
 console.log("this array contains my favourite animals");
 console.log(plurality);
 plurality=["lions", "tigers", "bear"];
@@ -67,8 +67,8 @@ console.log(x);
 console.log(b);
 console.log(c);
 
-var multiple =["honey", 4 , ["orange", null, 4]];
-var inf = 6/0;
+let multiple =["honey", 4 , ["orange", null, 4]];
+let inf = 6/0;
 if (6/0 === 10/0)
 console-log("Infinity works");
 else console-log("Infinity does not work");
