@@ -166,7 +166,7 @@ let show = document.getElementById("show-on-click");
 show.addEventListener("click", () => {
    isVisible = !isVisible;
    if (isVisible === true) {
-      document.getElementById("show-on-click").innerHTML = "hide the details";
-   }
+     show.innerHTML = "hide the details";
+   }else show.innerHTML = 'show the details'
    !isVisible ? removeBooksInfo() : createBooksInfo(bookDescription);
 });
