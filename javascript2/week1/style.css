@@ -1,0 +1,27 @@
+body{
+    background: rgb(170, 207, 195);
+}
+
+
+
+#my-books-cover ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+}
+#my-books-cover ul li{
+    list-style: none;
+    width: 20%;
+
+}
+
+
+#my-books-cover ul li img{
+    width: 300;
+    height: 150px;
+}
+button{
+    background: rebeccapurple;
+    height: 50px;
+    width: 100px;
+}
