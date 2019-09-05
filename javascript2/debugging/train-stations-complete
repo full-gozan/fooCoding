@@ -120,10 +120,10 @@ function routeLengthInKilometers(route) {
             const nextCity = route[index + 1];
             const nextStation = trainStations[nextCity];
             let totalLength = totalLengthInKm + distanceBetweenStationsInMeters(currentStation, nextStation);
-            totalLength = metersToKilometers(totalLength);
+            totalLengthInKm = metersToKilometers(totalLength);
         }
         // eslint-disable-next-line no-undef
-        return totalLength;
+        return totalLengthInKm;
     }
 }
 
