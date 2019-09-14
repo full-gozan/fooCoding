@@ -1,0 +1,19 @@
+{
+  "name": "foocoding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/full-gozan/fooCoding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/full-gozan/fooCoding/issues"
+  },
+  "homepage": "https://github.com/full-gozan/fooCoding#readme"
+}
