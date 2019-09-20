@@ -1,0 +1,75 @@
+.alert-error {
+    color: red;
+}
+body{
+    background-color: gray;
+}
+#repo{
+    background-color: blue;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+label{
+    padding-left: 18px;
+}
+
+#summary {
+background-color: white;
+width: 40%;
+float: left;
+margin: 12px;
+padding: 12px;
+text-align: center;
+
+}
+#repo-info{
+    background-color: white;
+
+    width: 55%;
+    float: right;
+    margin-top: 15px;
+    margin-right: 12px;
+    text-align: center;
+}
+
+#container, #summary-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: solid;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+#left
+{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#info-left{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#info-right{
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+}
+
+#center {
+    margin-right: 50%;
+}
+
+
+
