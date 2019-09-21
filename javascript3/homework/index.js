@@ -64,7 +64,7 @@
         const leftside = document.getElementById('left');
         const center = document.getElementById('center');
         const container = document.getElementById('container');
-        const link = document.getElementById('link');
+        //const link = document.getElementById('link');
 
 
 
@@ -73,18 +73,19 @@
 
 
         summary.addEventListener('change', () => {
-          leftside.innerHTML = '';
-          center.innerHTML = '';
-          rightside.innerHTML = '';
-          infoleft.innerHTML='';
-          inforight.innerHTML='';
+
 
 
           for (let index = 0; index < data.length; index++) {
             if (data[index].name === summary.value) {
+              leftside.innerHTML = '';
+              center.innerHTML = '';
+              rightside.innerHTML = '';
+              infoleft.innerHTML='';
+             inforight.innerHTML='';
+             const link =document.createElement('a');
+             inforight.appendChild(link);
 
-              //link.setAttribute('href', data[index].html_url);
-              //link.innerHTML = summary.value;
               createAndAppend('h3', infoleft, {
                 text: 'name: '
 
@@ -101,12 +102,15 @@
                 text: '  updated_at: '
 
               });
-
-
-              createAndAppend('p', inforight, {
-                text: summary.value
+            
+              createAndAppend('a', inforight, {
+                text: link
 
               });
+              link.setAttribute('href', data[index].html_url);
+              link.setAttribute('target','_blank')
+              link.innerHTML = summary.value;
+
               createAndAppend('p', inforight, {
                 text: data[index].description
               });

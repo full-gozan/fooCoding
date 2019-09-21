@@ -61,10 +61,15 @@ img{
 
 #info-right{
     margin-right: 15%;
+    padding-top: 17px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
 
+}
+#right p{
+    background: gray;
+    color: white;
 }
 
 #center {
