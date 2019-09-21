@@ -70,6 +70,32 @@ img{
 #center {
     margin-right: 50%;
 }
+@media screen and (max-width:600px){
+    #repo-info{
+        float: left;
+        width: 100%;
+    }
+    #right{
+        margin-left: -12px;
+    }
+    #summary{
+        width: 100%;
 
+    }
+    #summary-container{
+        padding-left: 0%;
+    }
+
+
+}
+@media screen and (min-width:600px) and (max-width:1250px){
+
+    #repo-info{
+        width: 45%;
+    }
+    #right{
+        margin-left: -22px;
+    }
+}
 
 
