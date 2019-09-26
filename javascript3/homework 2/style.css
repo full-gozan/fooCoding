@@ -44,7 +44,7 @@ img{
     width: 30px;
     height: 30px;
 }
-#left
+#contributorPicture
 {
     margin-left: 10%;
     display: flex;
@@ -67,12 +67,12 @@ img{
     justify-content: space-between; 
 
 }
-#right p{
+#contributionNumber p{
     background: gray;
     color: white;
 }
 
-#center {
+#contributorName {
     margin-right: 50%;
 }
 @media screen and (max-width:600px){
@@ -80,7 +80,7 @@ img{
         float: left;
         width: 100%;
     }
-    #right{
+    #contributionNumber{
         margin-left: -12px;
     }
     #summary{
@@ -98,7 +98,7 @@ img{
     #repo-info{
         width: 45%;
     }
-    #right{
+    #contributionNumber{
         margin-left: -22px;
     }
 }
