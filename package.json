@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/full-gozan/fooCoding/issues"
   },
-  "homepage": "https://github.com/full-gozan/fooCoding#readme"
+  "homepage": "https://github.com/full-gozan/fooCoding#readme",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
 }
