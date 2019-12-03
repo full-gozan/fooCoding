@@ -1,0 +1,11 @@
+use new_world;
+SELECT name FROM city WHERE population > 8000000;
+SELECT name FROM country WHERE name LIKE '%land%';
+SELECT name FROM city  WHERE population BETWEEN 500000 AND 1000000;
+SELECT name FROM country WHERE continent LIKE 'Europe';
+SELECT name FROM country  ORDER BY surfaceArea DESC;
+SELECT city.name  FROM city    INNER JOIN    country  ON city.countrycode = country.code where country.name ='Netherlands' ;
+SELECT population FROM city WHERE name = 'Rotterdam';
+SELECT name, MAX(surfacearea) FROM country GROUP BY name ORDER BY MAX(surfacearea)DESC  LIMIT 10;
+SELECT name, MAX(population) FROM city GROUP BY name ORDER BY MAX(population)DESC  LIMIT 10;
+SELECT SUM(population)  FROM city;      
