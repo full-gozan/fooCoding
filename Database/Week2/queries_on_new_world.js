@@ -1,6 +1,4 @@
 const mysql = require('mysql');
-const express = require('express');
-const app = express();
 
 const mysqlConnection = mysql.createConnection({
   host: 'localhost',
@@ -35,11 +33,11 @@ const queries=[
     )            
 )
 //call the Procedure to show the languages of 2 input countries 
-/* let callProcedure = CALL 'commen_languages(?,?)';
+let callProcedure = CALL 'commen_languages(?,?)';
  
 connection.query(callProcedure,'Iraq','Sweden', (error, results, fields) => {
   if (error) {
     return console.error(error.message);
   }
 });
-mysqlConnection.end(); */
+mysqlConnection.end(); 
