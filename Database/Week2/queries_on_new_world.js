@@ -34,12 +34,12 @@ const queries=[
             }
     )            
 )
-//call the Procedure 
-let callProcedure = CALL 'getALLcountries(?,?)';
+//call the Procedure to show the languages of 2 input countries 
+/* let callProcedure = CALL 'commen_languages(?,?)';
  
-connection.query(callProcedure,'Arabic','Middle East', (error, results, fields) => {
+connection.query(callProcedure,'Iraq','Sweden', (error, results, fields) => {
   if (error) {
     return console.error(error.message);
   }
 });
-mysqlConnection.end();
+mysqlConnection.end(); */

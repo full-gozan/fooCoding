@@ -33,17 +33,22 @@ Same region
 If yes, display those countries.
 If no, display TRUE or FALSE */
 DELIMITER //
- CREATE PROCEDURE commen_countries_with_language(
-in lang VARCHAR(255),
-in reg VARCHAR(255)
+ CREATE PROCEDURE commen_languages(
+in country1 VARCHAR(255),
+in country2 VARCHAR(255)
 )
 BEGIN
-select c.name, l.language from country c
-inner join new_world.countrylanguage l on c.code = l.countrycode
+(select l.language from countrylanguage l
+inner join  country c  on c.code=  l.countrycode
 where l.isofficial = "T"
-and c.region = reg
-and l.language = lang;
+and  c.Name = country1)
+union
+(select l.language from countrylanguage l
+inner join  country c  on c.code=  l.countrycode
+where l.isofficial = "T"
+and c.Name = country2);
+
     
 END //
 DELIMITER;
-call commen_countries_with_languag('Arabic','Middle East');
+call commen_languages('Arabic','Middle East');
