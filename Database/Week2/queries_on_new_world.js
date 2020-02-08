@@ -1,4 +1,8 @@
 const mysql = require('mysql');
+const express = require('express');
+const app =express();
+const parser =require('body-parser')
+app.use(parser.json());
 
 const mysqlConnection = mysql.createConnection({
   host: 'localhost',
@@ -35,3 +39,14 @@ const queries=[
     )            
 )
 
+app.listen(4000,()=>console.log('connected to the port'));
+app.get('/country',(req,res)=>{
+    mysqlConnection.query('SELECT country.Name FROM new_world.country where country.Region="Middle East"',(err,rows,fields)=>{
+if(!err)
+res.send( rows);
+else
+console.log('err');
+
+
+    })
+});
