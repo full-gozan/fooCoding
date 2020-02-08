@@ -24,7 +24,7 @@ mysqlConnection.connect(function (err){
 })
 
 
-app.get('/country',(req,res)=>{
+app.get('/list',(req,res)=>{
     mysqlConnection.query('SELECT country.Name FROM new_world.country where country.Region="Middle East"',(err,rows,fields)=>{
 if(!err)
 res.send( rows);
