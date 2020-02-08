@@ -1,0 +1,23 @@
+{
+    "name": "reactexpress",
+    "version": "1.0.0",
+    "description": "Starter kit for creating React/Redux and Express apps",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "server": "nodemon server.js",
+      "client": "npm start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Gozan",
+    "license": "",
+    "devDependencies": {},
+    "dependencies": {
+      "concurrently": "^4.1.1",
+      "express": "^4.17.1",
+      "nodemon": "^1.19.1", "body-parser": "^1.19.0",
+      "mysql": "^2.17.1",
+      "mysql2": "^2.0.2"
+    }
+  }
+  
